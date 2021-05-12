@@ -1,0 +1,368 @@
+{
+	"easycom": {
+	    // 下载安装的方式需要前面的"@/"，npm安装的方式无需"@/"
+	    // 下载安装方式
+	    "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	    // npm安装方式
+	    // "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		//登录页面
+		//popGesture禁止测划
+		{
+			"path": "pages/login/login",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			},
+			"app-plus": {
+				"popGesture": "none"//禁用侧滑返回
+			}
+		},
+		//手机号注销页面
+		{
+			"path": "pages/user/logout/logout",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		//用户协议页面
+		{
+		    "path" : "pages/user/pact/userServer/userServer",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/networkAnomaly/networkAnomaly",
+		    "style" :                                                                                    
+		    {
+		        "navigationStyle": "custom" // 隐藏系统导航栏
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/user/pact/memberServer/memberServer",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		
+		}
+		,{
+		    "path" : "pages/user/pact/privacyPolicy/privacyPolicy",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/user/pact/cancellationNotice/cancellationNotice",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/user/pact/transportTrade/transportTrade",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/user/pact/transportProtocol/transportProtocol",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,
+		//余额
+		{
+			"path": "pages/user/over/over",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		//提现
+		{
+			"path": "pages/user/draw/draw",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		//提现
+		{
+			"path": "pages/user/bill/bill",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		//提现
+		{
+			"path": "pages/user/billInfo/billInfo",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		//充值
+		{
+			"path": "pages/user/charge/charge",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		
+		{
+			"path": "pages/user/logoutPhone/logoutPhone",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		//用户更换手机号
+		{
+			"path": "pages/user/userDeitPhone/userDeitPhone",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		//我的熟车
+		{
+			"path": "pages/user/myCar/myCar",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		
+		{
+			"path": "pages/user/userAddPhone/userAddPhone",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		{
+			"path": "pages/user/userPassword/userPassword",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		{
+			"path": "pages/user/userEditPass/userEditPass",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		
+		{
+			"path": "pages/user/assess/assess",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		
+		{
+			"path": "pages/user/userDeityan/userDeityan",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		//实名认证
+		{
+			"path": "pages/attest/attest/attest",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		}
+		//认证状态页面
+		,{
+			"path": "pages/attest/attestStatus/attestStatus",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		}
+		//企业认证
+		,{
+			"path": "pages/attest/attestFirm/attestFirm",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		//我的评价
+		{
+			"path": "pages/goods/driverAssess/driverAssess",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		//地图页面
+		{
+			"path": "pages/goods/place/place",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		//发货指定司机页面
+		{
+			"path": "pages/goods/assignDriver/assignDriver",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		
+		//货主发货页面
+		{
+			"path": "pages/goods/ship/ship",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		{
+			"path": "pages/goods/goodsList/goodsList",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		{
+			"path": "pages/goods/goodsEdit/goodsEdit",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		}
+		,
+		//快速重发
+		{
+			"path": "pages/goods/againGoods/againGoods",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		}
+		,
+		{
+			"path": "pages/order/orderInfo/orderInfo",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		
+		{
+			"path": "pages/order/amap/amap",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		{
+			"path": "pages/goods/sendGoods/sendGoods",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		{
+			"path": "pages/goods/oftenGoods/oftenGoods",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		//
+		//订单
+		{
+			"path": "pages/order/orderList/orderList",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		}
+		,
+		{
+			"path": "pages/order/orderSearch/orderSearch",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		}
+		,
+		{
+			"path": "pages/order/orderRate/orderRate",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		{
+			"path": "pages/order/refundFlow1/refundFlow1",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		//运输中取消
+		{
+			"path": "pages/order/deleteOrder/deleteOrder",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		//待确认取消
+		{
+			"path": "pages/order/deleteOrderDai/deleteOrderDai",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		{
+			"path": "pages/order/driverBrief/driverBrief",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		{
+			"path": "pages/user/news/news",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		{
+			"path": "pages/user/newsInfo/newsInfo",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		//我的
+		{
+			"path": "pages/user/my/my",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		},
+		//个人资料
+		{
+			"path": "pages/user/myInfo/myInfo",
+			"style" : {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
